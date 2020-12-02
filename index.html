@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>NAVER</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/searchbox.js"></script>
+    <script type="text/javascript" src="js/pop.js"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <!-- 로고 & 검색창 영역 -->
+        <div id="header_fixed">
+
+            <div class="service_wrap">
+                <div class="service clear">
+                    <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719" class="link_set">네이버를 시작페이지로</a>
+                    <i class="sa_bar"></i>
+                    <a href="https://jr.naver.com/" class="jr_naver blind">쥬니어네이버</a>
+                    <a href="https://happybean.naver.com/" class="bean_naver blind">해피빈</a>
+                </div>
+            </div>
+            <div class="header_wrap">
+                <div class="header_wrap_box clear">
+                    <div class="logo">
+                        <h1>
+                            <a href="#"><span class="blind">네이버</span></a>
+                        </h1>
+                    </div>
+                    <div class="searchbox">
+                        <form method="get" action="https://search.naver.com/search.naver?">
+                            <fieldset>
+                                <input type="text" class="searchbox_input" title="검색어 입력" maxlength="255" placeholder="검색어를 구글에서 입력해 주세요." />
+                                <button type="submit" class="btn_submit">
+                                    <span class="blind">검색</span>
+                                    <span class="ico_search_submit"></span>
+                                </button>
+                            </fieldset>
+                        </form>
+                        <a href="#d" class="btn_keyboard">
+                            <span class="blind">한글 입력기</span>
+                            <span id="pop_bt" class="ico_keyboard"></span>
+                        </a>
+                        <div id="pop_keyboard">
+                            <a href="#"><img src="img/pop_keyboard.jpg" alt="키보드로 입력하기" /></a>
+                        </div>
+                        <a href="#" class="btn_arr" target="_top">
+                            <span class="blind">자동완성 레이어</span>
+                            <span class="ico_arr"></span>
+                        </a>
+                        <div id="pop_auto">
+                            <a href="#"><span class="pop_auto_left">도움말 <i class="sa_bar2"></i> <b>신고</b></span>
+                            <span class="pop_auto_right">자동완성 끄기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- 로고 & 검색창 끝 -->
+
+        <!-- 네비게이션 영역 -->
+        <div id="gnb">
+            <div id="gnb_wrap">
+                <ul class="nav_list1">
+                    <li><a href="https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fmail.naver.com%2F"><i class="nav_list1_mail"></i>메일</a></li>
+                    <li><a href="https://section.cafe.naver.com/">카페</a></li>
+                    <li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0">블로그</a></li>
+                    <li><a href="https://kin.naver.com/">지식iN</a></li>
+                    <li><a href="https://shopping.naver.com/">쇼핑</a></li>
+                    <li><a href="https://nid.naver.com/nidlogin.login?svctype=1&url=https%3A%2F%2Forder.pay.naver.com%2Fhome">Pay</a></li>
+                    <li><a href="https://tv.naver.com/"><i class="nav_list1_tv"></i>TV</a></li>
+                </ul>
+                <ul class="nav_list2">
+                    <li class=""><a href="https://dict.naver.com/">사전</a></li>
+                    <li class=""><a href="https://news.naver.com/">뉴스</a></li>
+                    <li class=""><a href="https://finance.naver.com/">증권</a></li>
+                    <li class=""><a href="https://land.naver.com/">부동산</a></li>
+                    <li class="https://map.naver.com/"><a href="">지도</a></li>
+                    <li class="https://movie.naver.com/"><a href="">영화</a></li>
+                    <li class="https://vibe.naver.com/today"><a href="">VIBE</a></li>
+                    <li class=""><a href="https://book.naver.com/">책</a></li>
+                    <li class=""><a href="https://comic.naver.com/index.nhn">웹툰</a></li>
+                </ul>
+                <a href="#" class="btn_more">더보기</a>
+                <div class="keyword">
+                    <a href="keyword_wrap">
+                        <span class="keyword_num">1</span>
+                        <span class="keyword_text">검색은 구글이지</span>
+                        <span class="btn_more"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- 네비게이션 끝 -->
+
+    <!-- 전체 본문 영역 -->
+    <div id="container" class="clear">
+        <div id="content">
+            <div class="main_ban"><a href="#"><img src="img/main_ban.jpg" alt="그랑사가 쇼케이스"></a></div>
+            <div class="news_line">
+                <a href="#" class="news_line_name">연합뉴스</a>
+                <a href="#" class="news_line_title">2020년 코로나 종식! 마스크 갖다버려!</a>
+                <div class="news_line_g">
+                    <a href="#">네이버뉴스 <span class="dot">ㆍ</span></a>
+                    <a href="#">연예</a>
+                    <a href="#">스포츠</a>
+                    <a href="#">경제</a>
+                </div>
+            </div>
+
+            <!-- 뉴스스탠드 영역 -->
+            <div class="news_stand">
+                <div class="news_stand_title">
+                    <h3><a href="#">뉴스스탠드</a></h3>
+                    <a href="#">구독한 언론사 <span class="dot">ㆍ</span> </a><a href="#"><b>전체언론사</b></a>
+                    <div class="news_stand_title_view">
+                        <a href="#" class="news_stand_ico_line"></a>
+                        <a href="#" class="news_stand_ico_thumbs"></a>
+                        <a href="#" class="news_stand_ico_set"></a>
+                    </div>
+                </div>
+                <div class="news_stand_logos">
+                    <a href="#"><i class="ico_news_prev"></i></a>
+                    <a href="#"><i class="ico_news_next"></i></a>
+                    <table>
+                        <tbody>
+                            <tr class="clear">
+                                <td><a href="#"><img src="img/01.png" alt="매일경제" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/02.png" alt="국민일보" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/03.png" alt="중앙일보" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/04.png" alt="이데일리" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/05.png" alt="더코리안헤롤드" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/06.png" alt="이코노미스트" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                            </tr>
+                            <tr class="clear">
+                                <td><a href="#"><img src="img/07.png" alt="코리아중앙데일리" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/08.png" alt="더사이언스타임즈" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/09.png" alt="스포티비뉴스" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/10.png" alt="이코노미리뷰" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/11.png" alt="국방일보" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/12.png" alt="컴퓨터월드" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                            </tr>
+                            <tr class="clear">
+                                <td><a href="#"><img src="img/13.png" alt="베리타스알파" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/14.png" alt="이뉴스투데이" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/15.png" alt="이코노미조선" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/16.png" alt="이웃집과학자" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/17.png" alt="오센" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/18.png" alt="YTN사이언스" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                            </tr>
+                            <tr class="clear">
+                                <td><a href="#"><img src="img/19.png" alt="엘르" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/20.png" alt="메트로" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/21.png" alt="더팩트" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/22.png" alt="대한경제" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/23.png" alt="더스쿠프" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                                <td><a href="#"><img src="img/24.png" alt="여성신문" /></a><span class="news_stand_over"><a href="#">구독</a><a href="#">기사보기</a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> <!-- 뉴스스탠드 끝 -->
+
+            <!-- 테마캐스트 영역 -->
+            <div id="themecast">
+                <div class="theme_head">
+                    <h3>오늘 읽을만한 글</h3>
+                    <p>주제별로 분류된 다양한 글 모음</p>
+                    <div class="theme_info">
+                        <span><b>1,864</b> 개의 글</span><i class="sa_bar2"></i>
+                        <a href="#"><span class="theme_info_set">관심주제 설정</span></a>
+                    </div>
+                </div>
+                <div class="theme_category">
+                    <a href="#"><i class="ico_news_prev"></i></a>
+                    <a href="#"><i class="ico_news_next"></i></a>
+                    <ul>
+                        <li class="theme_category1"><a href="#">엔터</a></li>
+                        <li class="theme_category2"><a href="#">스포츠</a></li>
+                        <li class="theme_category3"><a href="#">자동차</a></li>
+                        <li class="theme_category4"><a href="#">웹툰</a></li>
+                        <li class="theme_category5"><a href="#">경제M</a></li>
+                        <li class="theme_category6"><a href="#">푸드</a></li>
+                        <li class="theme_category7"><a href="#">게임</a></li>
+                        <li class="theme_category8"><a href="#" class="theme_category_focus">영화</a></li>
+                    </ul>
+                </div>
+                <div class="theme_content1 clear">
+                    <div class="theme_topstory">
+                        <a href="#">
+                            <span class="thumb"><img src="img/theme_01.jpeg" alt="'애비규환' 정수정에게 뇌 구조가 궁금하다고 물었더니..."></span>
+                            <span class="topstory_info">
+                                <span class="info1">인터뷰</span>
+                                <strong class="info2">'애비규환' 정수정에게 뇌 구조가 궁금하다고 물었더니...</strong>
+                                <span class="info3">어떤 문장으로 이 글을 시작해야 할지 참 오래 고민했다. 이유는 간단했다. 어떤 수식어로 정수정이란 사람을 설명해야 할지 이리저리 각을 재봐도 온전히 그를 담아낼 표현이 떠오르지 않아서였다. 어쩌면 정수정이란 배우를 편리한 표현 속에 가두고 싶지 않아서 그럴지도 모르겠다. 의식하지 않았더라도, 그는 매 순간 스스로를 둘러싼 틀을 깨나가고 있으니 말이다.</span>
+                                <span class="info4">씨네플레이</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="theme_substory">
+                        <ul>
+                            <li class="clear">
+                                <a href="#" class="substory_thumb">
+                                    <span class="thumb"><img src="img/theme_02.jpeg" alt="'애비규환' 장혜진, “'살인의 추억' 출연 거절한 것 후회하냐고?”"></span>
+                                </a>
+                                <a href="#" class="substory_info">
+                                    <span class="info1">인터뷰</span>
+                                    <strong class="info2">'애비규환' 장혜진, “'살인의 추억' 출연 거절한 것 후회하냐고?”</strong>
+                                    <span class="info4">씨네플레이</span>
+                                </a>
+                            </li>
+                            <li class="clear">
+                                <a href="#" class="substory_thumb">
+                                    <span class="thumb"><img src="img/theme_03.jpeg" alt="여기가 장르 맛집! 액션+로맨스 고루 챙긴 블록버스터 '특수부대 백호'"></span>
+                                </a>
+                                <a href="#" class="substory_info">
+                                    <span class="info1">VOD 최초 개봉관</span>
+                                    <strong class="info2">여기가 장르 맛집! 액션+로맨스 고루 챙긴 블록버스터 '특수부대 백호'</strong>
+                                    <span class="info4">씨네플레이</span>
+                                </a>
+                            </li>
+                            <li class="clear">
+                                <a href="#" class="substory_thumb">
+                                    <span class="thumb"><img src="img/theme_04.jpeg" alt="'아쿠아맨 2' 앰버 허드 하차 청원 서명 100만 명 넘어설까"></span>
+                                </a>
+                                <a href="#" class="substory_info">
+                                    <span class="info1">영화뉴스</span>
+                                    <strong class="info2">'아쿠아맨 2' 앰버 허드 하차 청원 서명 100만 명 넘어설까</strong>
+                                    <span class="info4">씨네플레이</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- 영화1 끝 -->
+
+                <div class="theme_content2">
+                    <ul>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_05.jpg" alt="영화에선 로맨틱! 현실에선 사이가 좋지 않았던 배우들"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">영화에선 로맨틱! 현실에선 사이가 좋지 않았던 배우들</strong>
+                                    <span class="info3">​안녕하세요, 영소남입니다. 봄 여름 가을 겨울 우리에게 늘 따뜻한 힐링과 대리만족을 주는 로맨스 영화들. 오늘 포스팅은 영화 속에선 로맨틱했지만 현실에선 사이가 별로 좋지 않았던 배우들이라는 주제를 들고 와보았는데요. 사이가 안좋은 기준은 영화 촬영 당시를 기준으로 잡았으며, 후에 연인으로 발전한 케이스 역시 함께 설명하였으니 이 점 참고해주시길 바라며</span>
+                                    <span class="info4">영소남</span><span class="info_date">ㆍ 어제</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_06.jpg" alt="아놀드 슈왈제네거 스파이 드라마로 넷플릭스 데뷔 예정"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">아놀드 슈왈제네거 스파이 드라마로 넷플릭스 데뷔 예정</strong>
+                                    <span class="info3">​액션 아이콘 아놀드 슈왈제네거는 아마존에서 방영 예정인 잭 리처 시리즈 제작팀이 만든 넷플릭스 스파이 드라마 시리즈를 통해 넷플릭스에 데뷔할 예정입니다.영원한 터미네이터 아놀드 슈왈제네거가 스파이 액션 스릴러 드라마를 통해 넷플릭스에 데뷔할 예정으로 주인공이자 제작자로 참여하게 된다고 합니다. 영화와 TV시장을 벗어나 온라인 스트리밍 서비스로 향하는 아..</span>
+                                    <span class="info4">청우 영화 미드</span><span class="info_date">ㆍ 어제</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_07.jpg" alt="'설국열차' 때문? 캡틴은 왜 슈와마를 안 먹었을까"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">'설국열차' 때문? 캡틴은 왜 슈와마를 안 먹었을까</strong>
+                                    <span class="info3">​코로나로 인해 자연스레 마블 영화, 드라마가 모두 밀리며 팬들은 마블 없는 일상을 보내고 있습니다. 비록 올해 마블 영화는 개봉하지 않지만, 다들 [어벤져스] 시리즈의 비하인드 모음 글을 통해 어벤져스 이야기를 다시금 회상하며 즐기는 시간이 됐으면 좋겠네요.​​​​어벤져스 보통 대작들이 촬영을 진행할 때는 보안을 위해 영화의 진짜 제목이 아닌 가짜 제목(W</span>
+                                    <span class="info4">난필</span><span class="info_date">ㆍ 2일 전</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_08.jpg" alt="제이크 질렌할, 마이클 베이 '앰뷸런스' 출연 협상중"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">제이크 질렌할, 마이클 베이 '앰뷸런스' 출연 협상중</strong>
+                                    <span class="info3">​할리우드 최고의 연기파 배우 중 한 명인 제이크 질렌할(39세)이 마이클 베이(55세) 감독의 신작 액션 스릴러 영화 <앰뷸런스> 출연 협상 중이라는 소식입니다.데드라인(Deadline)의 보도에 따르면, <앰뷸런스>는 덴마크 영화 <Ambulancen>(2005)를 (TV 드라마 <프로디걸 선>의 시나리오를 쓴) 크리스 페닥(45세)이 각색한 작품이라고 </span>
+                                    <span class="info4">나임상</span><span class="info_date">ㆍ 어제</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- 영화2-1 끝 -->
+
+                <div class="theme_content3">
+                    <div class="theme_head">
+                        <h3>일간 박스오피스</h3>
+                        <p>2020.11.13. 누적관객수</p>
+                    </div>
+
+                    <div class="movie">
+                        <a href="#"><i class="ico_news_prev"></i></a>
+                        <a href="#"><i class="ico_news_next"></i></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb"><img src="img/movie_01.jpg" alt="도굴"></span>
+                                    <span class="movie_title">
+                                        <strong>1&nbsp; 도굴</strong>
+                                        <span>개봉 <b>2020.11.04.</b></span>
+                                        <span>일간 <b>49,217명</b></span>
+                                        <span>누적 <b>787,425명</b></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb"><img src="img/movie_02.jpg" alt="내가 죽던 날"></span>
+                                    <span class="movie_title">
+                                        <strong>2&nbsp; 내가 죽던 날</strong>
+                                        <span>개봉 <b>2020.11.12.</b></span>
+                                        <span>일간 <b>24,210명</b></span>
+                                        <span>누적 <b>51,562명</b></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb"><img src="img/movie_03.jpg" alt="삼진그룹 영어토익반"></span>
+                                    <span class="movie_title">
+                                        <strong>3&nbsp; 삼진그룹 영어토익반</strong>
+                                        <span>개봉 <b>2020.10.21.</b></span>
+                                        <span>일간 <b>22,870명</b></span>
+                                        <span>누적 <b>1,359,777명</b></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb"><img src="img/movie_04.jpg" alt="극장판 바이올렛 에버가든"></span>
+                                    <span class="movie_title">
+                                        <strong>4&nbsp; 극장판 바이올렛 에버가든</strong>
+                                        <span>개봉 <b>2020.11.12.</b></span>
+                                        <span>일간 <b>3,588명</b></span>
+                                        <span>누적 <b>9,344명</b></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thumb"><img src="img/movie_05.jpg" alt="애비규환"></span>
+                                    <span class="movie_title">
+                                        <strong>5&nbsp; 애비규환</strong>
+                                        <span>개봉 <b>2020.11.12.</b></span>
+                                        <span>일간 <b>2,630명</b></span>
+                                        <span>누적 <b>8,201명</b></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- 영화 순위 끝 -->
+
+                <div class="theme_content2">
+                    <ul>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_09.jpg" alt="분위기 미쳤다는 김혜수 과거 사진.zip"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">분위기 미쳤다는 김혜수 과거 사진.zip</strong>
+                                    <span class="info3">​최근 소셜 미디어와 커뮤니티 사이에서는 '김혜수 본인도 알고 있다는 인생 실물짤.jpg' 짤이 화제였습니다. 신작 <내가 죽던 날> 홍보차 <톡이나 할까?>에 출연한 김혜수와 이정은이 '김혜수 실물짤'에 대해 직접 언급한 것인데요.김혜수는 실물짤에 대해서 '실물과 다소 큰 차이 사과드려요~~~~~'라고 했지만, 이 짤을 본 팬들의 입장</span>
+                                    <span class="info4">씨네플레이</span><span class="info_date">ㆍ 2일 전</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_10.jpg" alt="올 하반기 영화계 다작왕이라는 이 배우"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화人</span>
+                                    <strong class="info2">올 하반기 영화계 다작왕이라는 이 배우</strong>
+                                    <span class="info3">​낮은 목소리로 섬뜩하게 상대를 꿰뚫는 눈빛. <내부자들> ‘조상무’로 등장해 충무로에 눈도장을 찍은 조우진의 첫인상은 그랬다. 얼마 지나지 않아 그는 드라마 <도깨비>에서 전작의 이미지와는 180도 다른 ‘김비서’ 역으로
+                                    변신에 성공해 시청자들에게 놀라움을 안겨주었다.
+                                    영화 <더 킹>, <남한산성>, <1987> 등 한 해에만 세 작품 이상 출연할 정도 </span>
+                                    <span class="info4">씨네플레이</span><span class="info_date">ㆍ 어제</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_11.jpg" alt="'부부의 세계' 뒤를 이을 막장 리메이크작 탄생?"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">'부부의 세계' 뒤를 이을 막장 리메이크작 탄생?</strong>
+                                    <span class="info3">​지상파, 케이블, OTT 등 셀 수 없이 많아진 플랫폼을 통해 다양한 콘텐츠들이 제작되는 요즘. 위험보다도 안전성을 어느 정도 보장하고 시작할 수 있는 ‘리메이크’가 열풍이다. 이미 드라마 <부부의 세계>, <라이프 온 마스>, <60일, 지정생존자> 등 많은 리메이크 작품들이 인기리에 방영된 가운데 현</span>
+                                    <span class="info4">씨네플레이</span><span class="info_date">ㆍ 1주일 전</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <span class="thumb"><img src="img/theme_12.jpg" alt="얼마나 다르길래? 모두 놀란 남주혁 벌크업 전후"></span>
+                                <span class="info_area">
+                                    <span class="info1">영화</span>
+                                    <strong class="info2">얼마나 다르길래? 모두 놀란 남주혁 벌크업 전후</strong>
+                                    <span class="info3">​운동으로 확실한 이미지 변신에 성공하는 배우들이 있습니다. 이번 주 화제의 중심에 남주혁이 소환된 이유도 이때문인데요. 운동 후 확실히 달라진 체형으로 네티즌들의 시선을 강!탈!했기 때문이죠. 모델 출신답게 슬림한 몸매의 소유자였던 배우 남주혁. 그런데 이게 웬일! 얼마 전 남주혁의 소속사에서 공개한 영상 속 그의 모습을 살펴보면 남주혁은 이전의 체형과는 </span>
+                                    <span class="info4">씨네플레이</span><span class="info_date">ㆍ 2일 전</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- 영화2-2 끝 -->
+
+                <div class="theme_content4">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="thumb"><img src="img/theme_13.jpg" alt="사상 최대의 테러를 막아라 '특수부대 백호'"></span>
+                                <i class="ico_play"></i>
+                                <span class="runtime">06:30</span>
+                                <strong class="info2">사상 최대의 테러를 막아라 '특수부대 백호'</strong>
+                                <span class="info4">씨네플레이</span><span class="info_date">ㆍ 2일 전</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="thumb"><img src="img/theme_14.jpg" alt="공동정범 (연출 김일란·이혁상)"></span>
+                                <i class="ico_play"></i>
+                                <span class="runtime">01:56:32</span>
+                                <strong class="info2">공동정범 (연출 김일란·이혁상)</strong>
+                                <span class="info4">네이버 인디극장</span><span class="info_date">ㆍ 2주일 전</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="thumb"><img src="img/theme_15.jpg" alt="스틸 플라워 (연출 박석영)"></span>
+                                <i class="ico_play"></i>
+                                <span class="runtime">01:23:19</span>
+                                <strong class="info2">스틸 플라워 (연출 박석영)</strong>
+                                <span class="info4">네이버 인디극장</span><span class="info_date">ㆍ 2주일 전</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="alert_msg">영화판의 컨텐츠는 <a href="#">㈜씨네플레이</a>에 의해 운영·편집 됩니다.</p>
+                <div class="ico_more_wrap">
+                    <button type="button" class="button_more"><i class="ico_more"></i>새로운 글 더보기</button>
+                </div> <!-- 영화4 끝 -->
+            </div> <!-- 테마캐스트 끝 -->
+        </div> <!-- 좌측 본문 영역 끝 -->
+
+        <!-- 우측 사이드바 영역 -->
+        <div id="sidebar">
+            <div class="login">
+                <h2 class="blind">로그인</h2>
+                <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+                <a href="#" class="login_button"><i class="ico_logo"></i>로그인</a>
+                <div class="idpass">
+                    <a href="#">아이디</a><!--
+                    --><span class="dot">ㆍ</span><!--
+                    --><a href="#">비밀번호찾기</a>
+                    <a href="#" class="join">회원가입</a>
+                </div>
+            </div> <!-- 로그인 끝 -->
+
+            <div class="weather">
+                <div class="weather_btn">
+                    <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+                    <a href="#" class="btn_next"><span class="blind">다음</span></a>
+                </div>
+                <a href="#" class="weather_info">
+                    <strong class="current">13.0°</strong><strong class="state">맑음</strong>
+                    <span class="max" aria-label="최고기온">19.0°</span><span class="min" aria-label="최저기온">4.0°</span>
+                    <span class="location">중곡동</span>
+                </a>
+            </div> <!-- 날씨 끝 -->
+
+            <div class="sidebar_ad">
+                <a href="#"><img src="img/sidebar_ad.jpg" alt="[광고]네이버 전자문서 미리미리 세테크 내 차 타고 자동차세 혜택도 타자"></a>
+            </div>
+
+            <!-- 트렌드 영역 시작 -->
+            <div class="trend">
+                <div class="trend_head">
+                    <h3><a href="#">트렌드쇼핑</a></h3>
+                    <div class="trend_tab">
+                        <a href="#" class="trend_tab_focus">상품</a>
+                        <a href="#">쇼핑몰</a>
+                        <a href="#">MEN</a>
+                    </div>
+                </div>
+
+                <div class="shop_content">
+                    <ul class="trend_market">
+                        <li><a href="#">G마켓</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">옥션</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#"><b>11번가</b></a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">위메프</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">이마트몰</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#"><b>올리브영</b></a></li>
+                        <li><a href="#"><b>티몬</b></a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">홈플러스</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#"><b>GS샵</b></a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">롯데i몰</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">신세계몰</a> <span class="dot">ㆍ</span></li>
+                        <li><a href="#">CJmall</a></li>
+                    </ul>
+                    <div class="trend_btn clear">
+                        <p><b>7</b> / 19</p>
+                        <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+                        <a href="#" class="btn_next"><span class="blind">다음</span></a>
+                    </div>
+                    <ul class="trend_pd clear">
+                        <li><a href="#"><span class="thumb"><img src="img/trend_01.jpg" alt="이거 아직 몰라? 역대급 최고반응!" /></span><span class="trend_pd_title"><b>이거 아직 몰라?</b><br />역대급 최고반응!</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_02.jpg" alt="단돈1만원대특가! 극찬후기800개↑" /></span><span class="trend_pd_title"><b>단돈1만원대특가!</b><br /> 극찬후기800개↑</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_03.jpg" alt="KF94가 100원대?! 간단하게뽑아쓰자" /></span><span class="trend_pd_title"><b>KF94가 100원대?!</b><br /> 간단하게뽑아쓰자</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_04.jpg" alt="최대 60%할인! 탈모걱정 그만!" /></span><span class="trend_pd_title"><b>최대 60%할인!</b><br /> 탈모걱정 그만!</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_05.jpg" alt="역대급 블프특가! 전상품 최대80%↓" /></span><span class="trend_pd_title"><b>역대급 블프특가!</b><br /> 전상품 최대80%↓</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_06.jpg" alt="겨울엔 더예쁘게 추위~걱정없어요" /></span><span class="trend_pd_title"><b>겨울엔 더예쁘게</b><br /> 추위~걱정없어요</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_07.jpg" alt="가장 예쁜톤 꺼내입어요" /></span><span class="trend_pd_title"><b>가장 예쁜톤</b><br /> 꺼내입어요</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_08.jpg" alt="라네즈 크림스킨 할인에 굿즈까지~" /></span><span class="trend_pd_title"><b>라네즈 크림스킨</b><br /> 할인에 굿즈까지~</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_09.jpg" alt="BEST 원피스룩 누가봐도 예쁘대~" /></span><span class="trend_pd_title"><b>BEST 원피스룩</b><br /> 누가봐도 예쁘대~</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_10.jpg" alt="퀄리티 BEST 전상품 10%↓" /></span><span class="trend_pd_title"><b>퀄리티 BEST</b><br /> 전상품 10%↓</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_11.jpg" alt="주말만이가격 70% 14K골드 링귀걸이" /></span><span class="trend_pd_title"><b>주말만이가격 70%</b><br /> 14K골드 링귀걸이</span></a></li>
+                        <li><a href="#"><span class="thumb"><img src="img/trend_12.jpg" alt="더 강력해진 효과 코어탄력크림EX" /></span><span class="trend_pd_title"><b>더 강력해진 효과</b><br /> 코어탄력크림EX</span></a></li>
+                    </ul>
+                    <div class="trend_btn2 clear">
+                        <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+                        <p><b>7</b> / 19</p>
+                        <a href="#" class="btn_next"><span class="blind">다음</span></a>
+                    </div> <!-- 트렌드 상품 끝 -->
+
+                    <div class="shop_news">
+                        <div class="shop_news_head">
+                            <h3>반갑다! 쇼핑뉴스</h3>
+                            <div class="trend_btn clear">
+                                <p><b>1</b> / 6</p>
+                                <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+                                <a href="#" class="btn_next"><span class="blind">다음</span></a>
+                            </div>
+                        </div>
+                        <div class="shop_news_content">
+                            <ul>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>그녀에게</b>러블리 여성의류! F/W 신상 세일중!</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>농식품상생협력</b>우리입맛 딱! 농축산물 추천</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>달리호텔</b>로맨틱 감성룩 예쁜 신상 세일</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>신비앙총판</b>기미잡티 고민? 불만족시100%환불</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>바디닭</b>저칼로리 도시락 42% SALE중!</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>에이블루스토어</b>커블체어 2+1특가 2개 사면 하나더!</a></li>
+                                <li><span class="dot">ㆍ</span><a href="#"><b>라운지비</b>온앤온다시없을 겨울특가기획전</a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- 쇼핑뉴스 끝 -->
+
+                    <div class="shop_ad">
+                        <div class="shop_ad_head">
+                            <div class="shop_ad_tab">
+                                <a href="#" class="shop_ad_tab_focus">패션</a>
+                                <a href="#">라이프</a>
+                                <a href="#">뷰티</a>
+                                <a href="#">디지털ㆍ레저</a>
+                            </div>
+                            <div class="trend_btn clear">
+                                <p><b>1</b> / 43</p>
+                                <a href="#" class="btn_prev"><span class="blind">이전</span></a>
+                                <a href="#" class="btn_next"><span class="blind">다음</span></a>
+                            </div>
+                        </div>
+                        <div class="shop_ad_content">
+                            <a href="#"><span class="thumb"><img src="img/shop_ad_01.jpg" alt="날씬핏~데일리골지티 SALE" /></span><span>날씬핏~데일리골지티 SALE</span></a>
+                            <a href="#"><span class="thumb"><img src="img/shop_ad_02.jpg" alt="부츠 여기 제일예뻐요!" /></span><span>부츠 여기 제일예뻐요!</span></a>
+                        </div>
+                    </div> <!-- 쇼핑 2컷 광고 끝 -->
+                </div> <!--  트렌드 쇼핑컨텐츠 끝 -->
+            </div> <!-- 트렌드 영역 끝 -->
+        </div> <!-- 사이드바 끝 -->
+        <a href="#" class="content_top"><span class="blind">TOP</span></a>
+    </div>
+
+    <!-- 푸터 영역 -->
+    <div id="footer">
+        <div class="footer_wrap">
+
+            <div class="footer_wrap2 clear">
+                <div class="footer_ad">
+                    <a href="#" class="clear">
+                      <span class="footer_ad_img thumb">
+                        <img src="img/footer_1_1.jpg" />
+                      </span>
+                      <span class="footer_ad_text">
+                        <span class="footer_ad_text1">UN기구 공동주최 방역전시</span>
+                        <span class="footer_ad_text2">유엔&국제조달 시장 진출</span>
+                        <span class="footer_ad_text3">국제기구 조달전문가들과<br />
+                         1:1 비지니스 미팅 진행</span>
+                      </span>
+                    </a>
+                </div>
+                <div class="footer_ad">
+                    <a href="#">
+                        <span class="footer_ad_img thumb">
+                            <img src="img/footer_1_2.jpg">
+                        </span>
+                        <span class="footer_ad_text">
+                            <span class="footer_ad_text1">스타책방X해피빈</span>
+                            <span class="footer_ad_text2">레이디제인의 스타책방</span>
+                            <span class="footer_ad_text3">동심을 되살리는<br />
+                            따뜻한 오디오클립 동화</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="footer_ad">
+                    <a href="#">
+                        <span class="footer_ad_img thumb">
+                            <img src="img/footer_1_3.jpg">
+                        </span>
+                        <span class="footer_ad_text">
+                            <span class="footer_ad_text1">네이버 MYBOX</span>
+                            <span class="footer_ad_text2">네이버 클라우드의 새이름</span>
+                            <span class="footer_ad_text3">업그레이드된 기능을<br />
+                            MYBOX로 만나세요</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_notice">
+                <a href="#"><b>공지사항</b></a>
+                <a href="#"><span class="footer_text">[오픈안내] 당신을 위한 맛집 검색 결과, For You를 확인하세요</span></a>
+                <a href="#"><span class="footer_service">서비스 전체보기</span></a>
+            </div>
+            <div class="footer_partner">
+                <div class="footer_partner_link">
+                    <h4>Creators</h4>
+                    <a href="#">크리에이터</a> <i class="sa_bar2"></i>
+                    <a href="#">스몰비즈니스</a>
+                </div>
+                <div class="footer_partner_link">
+                    <h4>Partners</h4>
+                    <a href="#">비즈니스.광고</a> <i class="sa_bar2"></i>
+                    <a href="#">스토어 개설</a> <i class="sa_bar2"></i>
+                    <a href="#">지역업체 등록</a>
+                </div>
+                <div class="footer_partner_link">
+                    <h4>Developers</h4>
+                    <a href="#">네이버 개발자 센터</a> <i class="sa_bar2"></i>
+                    <a href="#">오픈 API</a> <i class="sa_bar2"></i>
+                    <a href="#">오픈소스</a> <i class="sa_bar2"></i>
+                    <a href="#">네이버 D2</a> <i class="sa_bar2"></i>
+                    <a href="#">네이버 D2SF</a> <i class="sa_bar2"></i>
+                    <a href="#">네이버 랩스</a>
+                </div>
+                <div class="footer_partner_imgc">
+                    <div class="footer_partner_img1" >
+                        <div class="footer_partner_text">
+                            <h4>웨일 브라우저</h4>
+                            <a href="#">다운받기</a>
+                        </div>
+                        <a href="#">
+                            <img src="img/footer_2_1.jpg">
+                        </a>
+                    </div>
+                    <div class="footer_partner_img2">
+                        <div class="footer_partner_text">
+                            <h4>프로젝트 꽃</h4>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <a href="#">
+                            <img src="img/footer_2_2.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="corp">
+                <address class="footer_corp">
+                    <a href="#">회사소개</a><i class="sa_bar2"></i>
+                    <a href="#">인재채용</a><i class="sa_bar2"></i>
+                    <a href="#">제휴제안</a><i class="sa_bar2"></i>
+                    <a href="#">이용약관</a><i class="sa_bar2"></i>
+                    <a href="#" class="footer_corp_company">개인정보처리방침</a><i class="sa_bar2"></i>
+                    <a href="#">청소년보호정책</a><i class="sa_bar2"></i>
+                    <a href="#">네이버 정책</a><i class="sa_bar2"></i>
+                    <a href="#">고객센터</a><i class="sa_bar2"></i>
+                    <a href="#" class="footer_corp_company corpblack">ⓒ NAVER Corp.</a>
+                </address>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
